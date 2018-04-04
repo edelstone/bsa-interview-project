@@ -1,6 +1,9 @@
+/* General */
+
 .bsa-header {
   background: #dd3f3b;
-  background: linear-gradient(to right, #dd3f3b, #ec5d59); }
+  background: linear-gradient(to right, #dd3f3b, #ec5d59);
+}
 
 .sub-header {
   background: #fbfbfb;
@@ -33,6 +36,71 @@
   background: #ecf2fa;
 }
 
+.settings h2 {
+  border-bottom: 1px dotted #e2e2e2;
+}
+
+select, input, .chosen-container-multi .chosen-choices {
+  background: #fbfbfb;
+  border: 1px solid #e2e2e2;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select {
+  min-width: 12rem;
+  background: #fbfbfb url("../images/sort-down.svg") no-repeat 95% 25%;
+  background-size: 0.8rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fbfbfb;
+  min-width: 13rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  padding: 1rem;
+  z-index: 99999999;
+}
+
+.criteria {
+  background: #e2e2e2;
+  margin-bottom: 3rem;
+}
+
+.forecast-data {
+  display: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.list.fa-ul {
+  margin-left: 4rem;
+}
+
+.list.fa-ul li {
+  margin-bottom: 0.5rem;
+}
+
+.show {
+  display: block !important;
+}
+
+/* Modal */
+
 .modal {
   border-radius: 3px;
   box-shadow: none;
@@ -49,31 +117,7 @@
   background-color: rgba(0,0,0,0.5);
 }
 
-.settings h2 {
-  border-bottom: 1px dotted #e2e2e2;
-}
-
-select, input, .chosen-container-multi .chosen-choices {
-  background: #fbfbfb;
-  border: 1px solid #e2e2e2;
-  padding: 0.5rem;
-  border-radius: 3px;
-  font-family: inherit;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.criteria {
-  background: #e2e2e2;
-  margin-bottom: -1rem;
-}
-
-select {
-  min-width: 12rem;
-  background: #fbfbfb url("../images/sort-down.svg") no-repeat 95% 25%;
-  background-size: 0.8rem;
-}
+/* Multi-select menus */
 
 .chosen-container-multi .chosen-choices {
   min-width: 15rem;
@@ -126,6 +170,8 @@ select {
   border-color: #e2e2e2;
 }
 
+/* Datepicker */
+
 .Zebra_DatePicker {
   font: inherit;
   border: 1px solid #e2e2e2;
@@ -148,41 +194,4 @@ button.Zebra_DatePicker_Icon {
 
 button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
   margin-right: 0.4rem;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fbfbfb;
-  min-width: 13rem;
-  border-radius: 3px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  padding: 1rem;
-  z-index: 99999999;
-}
-
-.forecast-data {
-  display: none;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-}
-
-.list.fa-ul {
-  margin-left: 4rem;
-}
-
-.list.fa-ul li {
-  margin-bottom: 0.5rem;
-}
-
-.show {
-  display: block !important;
 }
