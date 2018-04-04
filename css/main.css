@@ -126,6 +126,9 @@ select {
   box-shadow: none;
   border: none;
   padding: 0.425rem 0.5rem 0.1rem;
+  background: #fbfbfb url("../images/sort-down.svg") no-repeat 95% 25%;
+  background-size: 0.8rem;
+  min-height: 34px;
 }
 
 .chosen-container-multi .chosen-choices li.search-choice {
