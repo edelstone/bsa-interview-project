@@ -15,6 +15,11 @@
   color: #3e81cc;
 }
 
+.bsa-red {
+  color: #dd3f3b;
+  border-color: #dd3f3b;
+}
+
 .bsa-blue-bg {
   background: #3e81cc;
   border-color: #3e81cc;
@@ -61,6 +66,7 @@ select, input, .chosen-container-multi .chosen-choices {
 
 .criteria {
   background: #e2e2e2;
+  margin-bottom: -1rem;
 }
 
 select {
@@ -74,11 +80,11 @@ select {
   max-width: 15rem;
   box-shadow: none;
   border: none;
-  padding: 0.425rem 0.5rem 0.2rem;
+  padding: 0.425rem 0.5rem 0.1rem;
 }
 
 .chosen-container-multi .chosen-choices li.search-choice {
-  margin: 0 3px 3px 0;
+  margin: 0 5px 5px 0;
   box-shadow: none;
 }
 
@@ -89,9 +95,11 @@ select {
   padding: 0.3rem 0;
   margin-top: 5px;
 }
+
 .chosen-container .chosen-results li {
   padding: 0.5rem;
 }
+
 .chosen-container .chosen-results li.highlighted {
   background-color: #3e81cc;
   background-image: none;
@@ -161,6 +169,14 @@ button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
 .list {
   padding: 0;
   margin: 0;
+}
+
+.list.fa-ul {
+  margin-left: 4rem;
+}
+
+.list.fa-ul li {
+  margin-bottom: 0.5rem;
 }
 
 .show-menu {
