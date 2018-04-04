@@ -1,0 +1,94 @@
+.bsa-header {
+  background: #dd3f3b;
+  background: linear-gradient(to right, #dd3f3b, #ec5d59); }
+
+.sub-header {
+  background: #fbfbfb;
+  border-bottom: 1px solid #e2e2e2; }
+
+.link:hover, .link:focus {
+  text-decoration: none;
+}
+
+.bsa-blue {
+  border-color: #3e81cc;
+  color: #3e81cc;
+}
+
+.bsa-blue-bg {
+  background: #3e81cc;
+  border-color: #3e81cc;
+}
+
+.button-main:hover, .button-main:focus {
+  background: #3267a3;
+}
+
+.button-reverse:hover, .button-reverse:focus {
+  background: #ecf2fa;
+}
+
+.modal {
+  border-radius: 3px;
+  box-shadow: none;
+  padding: 1.5rem;
+  bottom: 10%;
+  max-width: 450px;
+}
+
+.modal a.close-modal {
+  display: none;
+}
+
+.blocker {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.settings h2 {
+  border-bottom: 1px dotted #e2e2e2;
+}
+
+select, input {
+  background: #fbfbfb;
+  border: 1px solid #e2e2e2;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.criteria {
+  background: #e2e2e2;
+}
+
+select {
+  min-width: 12rem;
+  background: #fbfbfb url("/images/sort-down.svg") no-repeat 95% 25%;
+  background-size: 0.8rem;
+}
+
+.Zebra_DatePicker {
+  font: inherit;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.Zebra_DatePicker .dp_body .dp_selected {
+  background: #3e81cc;
+}
+
+.Zebra_DatePicker .dp_body .dp_hover {
+  background: #e2e2e2;
+}
+
+button.Zebra_DatePicker_Icon {
+  background: url("/images/cal.svg") no-repeat center;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
+  margin-right: 0.4rem;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BSA Forecasting Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zebra_datepicker/dist/css/bootstrap/zebra_datepicker.min.css">
+    <link rel="stylesheet" href="css/html5bp.css"/>
+    <link rel="stylesheet" href="css/tachyons.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+
+  <body class="sans-serif fw3 f6 lh-copy">
+
+    <header class="bsa-header pa3">
+      <div class="mw8 center flex items-center justify-between">
+        <a href="https://buysellads.com"><img class="mw3 h2" alt="BSA" src="images/bsa-logo.svg"></a>
+        <a class="link white f5 fw5" href="#nowhere">My dashboards <i class="fas fa-caret-down ml2"></i></a>
+      </div>
+    </header>
+
+    <section class="sub-header pa3">
+      <div class="mw8 center flex items-center justify-between">
+        <h1 class="fw9 f3 ma0 lh-title">Inventory Forecasting</h1>
+        <a class="link pv2 ph3 ba br2 bsa-blue bg-white fw5 button-reverse" href="#settings">Manage dashboard <i class="fas fa-cog ml2 f5"></i></a>
+      </div>
+      <div id="settings" class="modal settings">
+        <h2 class="mt0 mb4 pb1 f3 fw9">Settings</h2>
+        <form>
+          <div class="flex justify-between items-center">
+            <label for="setting-interval">Default date range</label>
+            <select id="setting-interval">
+              <option>Next week</option>
+              <option selected>Next two weeks</option>
+              <option>Next month</option>
+              <option>Next two months</option>
+              <option>Next 6 months</option>
+            </select>
+          </div>
+          <div class="mt3 flex justify-between items-center">
+            <label for="setting-country">Default country</label>
+            <select id="setting-country">
+              <option>Australia</option>
+              <option selected>Canada</option>
+              <option>China</option>
+              <option>United Kingdom</option>
+              <option>United States</option>
+            </select>
+          </div>
+          <div class="mt3 flex justify-between items-center">
+            <label for="setting-segment">Default country</label>
+            <select id="setting-segment">
+              <option>Beauty &amp; Fashion</option>
+              <option>Cryptocurrency</option>
+              <option>Food &amp; Drink</option>
+              <option selected>Photography</option>
+              <option>Podcasts</option>
+            </select>
+          </div>
+          <div class="settings-buttons mt4">
+            <a class="button-main dib link ba pv2 ph4 bsa-blue-bg white fw5 br2 mr3" href="#" rel="modal:close">Save</a>
+            <a class="cancel link underline bsa-blue" href="#" rel="modal:close">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="page-content pa3">
+      <div class="mw8 center mt3">
+        <div class="instructions">
+          <p>Select your criteria below. If you have defaults set these will be filled in for you. Default values can be managed in <a class="link underline bsa-blue" href="#settings">your dashboard settings</a>.</p>
+        </div>
+        <form class="criteria mt4 pa4 br2">
+          <div class="flex flex-wrap">
+            <div class="date-range mr5">
+              <label for="date-range-start"><span class="fw5">Date-range:</span> <a class="link underline bsa-blue" href="#nowhere">Next two weeks</a></label>
+              <div class="mt2">
+                <input class="datepicker-start mw5" value="04-04-2018" type="text" id="date-range-start">
+                <span class="ph2">to</span>
+                <input class="datepicker-end mw5" value="04-18-2018" type="text" id="date-range-end">
+              </div>
+            </div>
+            <div class="country mr5">
+              <label for="country" class="fw5">Country</label>
+              <div class="mt2">
+                <select id="country">
+                  <option>Australia</option>
+                  <option selected>Canada</option>
+                  <option>China</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                </select>
+              </div>
+            </div>
+            <div class="segment">
+              <label for="segment" class="fw5">Segment</label>
+              <div class="mt2">
+                <select id="segment">
+                  <option>Beauty &amp; Fashion</option>
+                  <option>Cryptocurrency</option>
+                  <option>Food &amp; Drink</option>
+                  <option selected>Photography</option>
+                  <option>Podcasts</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="mt4">
+            <a class="button-main dib link ba pv2 ph4 bsa-blue-bg white fw5 br2 mr3" href="#nowhere">Submit</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zebra_datepicker/dist/zebra_datepicker.min.js"></script>
+    <script src="js/vendor/fontawesome-all.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
