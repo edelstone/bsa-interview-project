@@ -37,7 +37,7 @@
 }
 
 .settings h2 {
-  border-bottom: 1px dotted #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 select, input, .chosen-container-multi .chosen-choices {
@@ -80,6 +80,7 @@ select {
 
 .forecast-data {
   display: none;
+  border-color: #e2e2e2;
 }
 
 .list {
