@@ -29,12 +29,20 @@ $(function() {
 
 // dropdown menu
 function dropdownMenu() {
-    var x = document.getElementById("dropdown-content");
-    if (x.className.indexOf("show-menu") == -1) {
-        x.className += " show-menu";
-    } else {
-        x.className = x.className.replace(" show-menu", "");
-    }
+  var x = document.getElementById("dropdown-content");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+  } else {
+    x.className = x.className.replace(" show", "");
+  }
+}
+
+// submit button
+function getData() {
+  var x = document.getElementById("forecast-data");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+  }
 }
 
 // multi-select menus

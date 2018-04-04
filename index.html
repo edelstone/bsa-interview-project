@@ -25,11 +25,11 @@
 
     <section class="sub-header pa3">
       <div class="mw8 center flex items-center justify-between">
-        <h1 class="fw9 f3 ma0 lh-title">Inventory Forecasting</h1>
+        <h1 class="fw2 f2 ma0 lh-title">Inventory Forecasting</h1>
         <a class="link pv2 ph3 ba br2 bsa-blue bg-white fw5 button-reverse" href="#settings">Manage dashboard <i class="fas fa-cog ml2 f5"></i></a>
       </div>
       <div id="settings" class="modal settings">
-        <h2 class="mt0 mb4 pb1 f3 fw9 lh-title">Settings</h2>
+        <h2 class="mt0 mb4 pb1 f3 fw2 lh-title">Settings</h2>
         <form>
           <div class="flex justify-between items-center">
             <label for="setting-interval">Default date range</label>
@@ -127,11 +127,11 @@
             </div>
           </div>
           <div class="mt4">
-            <a class="button-main dib link ba pv2 ph4 bsa-blue-bg white fw5 br2 mr3" href="#nowhere">Submit</a>
+            <a onclick="getData()" class="button-main dib link ba pv2 ph4 bsa-blue-bg white fw5 br2 mr3" href="#nowhere">Submit</a>
           </div>
         </form>
 
-        <div class="results mt5 bt b--light-gray mb6">
+        <div id="forecast-data" class="forecast-data results mt5 bt b--light-gray mb6">
           <h2 class="f2 fw9 mt4 mb4 lh-solid"><i class="fal fa-eye bsa-red mr3"></i>405,614 impressions</h2>
           <ul class="list f5 fa-ul">
             <li><span class="fa-li"><i class="far fa-calendar-alt bsa-blue mr2"></i></span>April 4, 2018 – April 18, 2018</li>

@@ -151,19 +151,23 @@ button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fbfbfb;
-    min-width: 13rem;
-    border-radius: 3px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    padding: 1rem;
-    z-index: 99999999;
+  display: none;
+  position: absolute;
+  background-color: #fbfbfb;
+  min-width: 13rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  padding: 1rem;
+  z-index: 99999999;
+}
+
+.forecast-data {
+  display: none;
 }
 
 .list {
@@ -179,6 +183,6 @@ button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
   margin-bottom: 0.5rem;
 }
 
-.show-menu {
+.show {
   display: block !important;
 }
