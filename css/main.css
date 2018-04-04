@@ -48,7 +48,7 @@
   border-bottom: 1px dotted #e2e2e2;
 }
 
-select, input {
+select, input, .chosen-container-multi .chosen-choices {
   background: #fbfbfb;
   border: 1px solid #e2e2e2;
   padding: 0.5rem;
@@ -67,6 +67,55 @@ select {
   min-width: 12rem;
   background: #fbfbfb url("../images/sort-down.svg") no-repeat 95% 25%;
   background-size: 0.8rem;
+}
+
+.chosen-container-multi .chosen-choices {
+  min-width: 15rem;
+  max-width: 15rem;
+  box-shadow: none;
+  border: none;
+  padding: 0.425rem 0.5rem 0.2rem;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+  margin: 0 3px 3px 0;
+  box-shadow: none;
+}
+
+.chosen-container .chosen-drop {
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  padding: 0.3rem 0;
+  margin-top: 5px;
+}
+.chosen-container .chosen-results li {
+  padding: 0.5rem;
+}
+.chosen-container .chosen-results li.highlighted {
+  background-color: #3e81cc;
+  background-image: none;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type=text] {
+  margin: 0;
+  font-family: inherit;
+  height: 18px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  background: #e2e2e2 url(../images/times.svg) 50% no-repeat !important;
+  width: 16px;
+  height: 100%;
+  background-size: 10px !important;
+  border-radius: 0 3px 3px 0;
+  top: 0;
+  right: 0;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+  background: #f4f4f4;
+  border-color: #e2e2e2;
 }
 
 .Zebra_DatePicker {
@@ -91,4 +140,29 @@ button.Zebra_DatePicker_Icon {
 
 button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
   margin-right: 0.4rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fbfbfb;
+    min-width: 13rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 1rem;
+    z-index: 99999999;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.show-menu {
+  display: block !important;
 }

@@ -26,3 +26,21 @@ $(function() {
       default_position: "below"
   });
 });
+
+// dropdown menu
+function dropdownMenu() {
+    var x = document.getElementById("dropdown-content");
+    if (x.className.indexOf("show-menu") == -1) {
+        x.className += " show-menu";
+    } else {
+        x.className = x.className.replace(" show-menu", "");
+    }
+}
+
+// multi-select menus
+$(function() {
+  $(".chosen-select").chosen({
+    max_selected_options: 3,
+    width: "100%"
+  });
+});

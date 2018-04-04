@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/zebra_datepicker/dist/css/bootstrap/zebra_datepicker.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.8.3/chosen.min.css">
     <link rel="stylesheet" href="css/html5bp.css"/>
     <link rel="stylesheet" href="css/tachyons.css"/>
     <link rel="stylesheet" href="css/main.css"/>
@@ -71,22 +72,37 @@
     <section class="page-content pa3">
       <div class="mw8 center mt3">
         <div class="instructions">
-          <p>Select your criteria below. If you have defaults set these will be filled in for you. Default values can be managed in <a class="link underline bsa-blue" href="#settings">your dashboard settings</a>.</p>
+          <p>Select forecasting criteria below. You can choose up to 3 countries and segments per search. Default values can be managed in <a class="link underline bsa-blue" href="#settings">your dashboard settings</a>.</p>
         </div>
         <form class="criteria mt4 pa4 br2">
           <div class="flex flex-wrap">
-            <div class="date-range mr5">
-              <label for="date-range-start"><span class="fw5">Date-range:</span> <a class="link underline bsa-blue" href="#nowhere">Next two weeks</a></label>
+            <div class="date-range mr4">
+              <label for="date-range-start">
+                <span class="fw5">Date-range:</span>
+                <span class="dropdown">
+                  <a onclick="dropdownMenu()" class="link underline bsa-blue" href="#nowhere">Next two weeks</a>
+                  <div class="dropdown-content" id="dropdown-content">
+                    <h3 class="mt0">Choose a preset</h3>
+                    <ul class="list">
+                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Next week</a></li>
+                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Next two weeks</a></li>
+                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Next month</a></li>
+                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Next two months</a></li>
+                      <li><a class="db link underline bsa-blue" href="#nowhere">Next six months</a></li>
+                    </ul>
+                  </div>
+                </span>
+              </label>
               <div class="mt2">
                 <input class="datepicker-start mw5" value="04-04-2018" type="text" id="date-range-start">
-                <span class="ph2">to</span>
+                <span class="ph1">to</span>
                 <input class="datepicker-end mw5" value="04-18-2018" type="text" id="date-range-end">
               </div>
             </div>
-            <div class="country mr5">
+            <div class="country mr4">
               <label for="country" class="fw5">Country</label>
               <div class="mt2">
-                <select id="country">
+                <select data-placeholder="Choose a country" multiple class="chosen-select" id="country">
                   <option>Australia</option>
                   <option selected>Canada</option>
                   <option>China</option>
@@ -98,7 +114,7 @@
             <div class="segment">
               <label for="segment" class="fw5">Segment</label>
               <div class="mt2">
-                <select id="segment">
+                <select data-placeholder="Choose a segment" multiple class="chosen-select"  id="segment">
                   <option>Beauty &amp; Fashion</option>
                   <option>Cryptocurrency</option>
                   <option>Food &amp; Drink</option>
@@ -120,6 +136,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/zebra_datepicker/dist/zebra_datepicker.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.8.3/chosen.jquery.min.js"></script>
     <script src="js/vendor/fontawesome-all.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
