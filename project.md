@@ -1,4 +1,4 @@
-# BSA interview project summary
+# BSA take-home assignment
 
 For this phase, we're going to work through a workflow that we've had to solve many times at BSA and have plenty of experience with: helping our ad-ops and sales team understand what's available for sale.
 
