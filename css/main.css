@@ -7,7 +7,8 @@
 
 .sub-header {
   background: #fbfbfb;
-  border-bottom: 1px solid #e2e2e2; }
+  border-bottom: 1px solid #e2e2e2;
+}
 
 .link:hover, .link:focus {
   text-decoration: none;
@@ -40,8 +41,8 @@
   border-bottom: 1px solid #e2e2e2;
 }
 
-select, input, .chosen-container-multi .chosen-choices {
-  background: #fbfbfb;
+input, select {
+  background: #fff;
   border: 1px solid #e2e2e2;
   padding: 0.5rem;
   border-radius: 3px;
@@ -49,11 +50,12 @@ select, input, .chosen-container-multi .chosen-choices {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  min-height: 35px;
 }
 
 select {
   min-width: 12rem;
-  background: #fbfbfb url("../images/sort-down.svg") no-repeat 95% 25%;
+  background: #fbfbfb url("../images/sort-down.svg") no-repeat 95% 3px;
   background-size: 0.8rem;
 }
 
@@ -65,12 +67,26 @@ select {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fbfbfb;
+  background-color: #fff;
   min-width: 13rem;
   border-radius: 3px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  padding: 1rem;
   z-index: 99999999;
+  margin-top: 3px;
+  padding: 0.3rem 0;
+  font-size: 13px;
+}
+
+.dropdown-content li a {
+  color: #222;
+  text-decoration: none;
+  padding: 0.5rem;
+  line-height: 15px;
+}
+
+.dropdown-content li a:hover, .dropdown-content li a:focus {
+  background-color: #3e81cc;
+  color: #fff;
 }
 
 .criteria {
@@ -121,14 +137,14 @@ select {
 /* Multi-select menus */
 
 .chosen-container-multi .chosen-choices {
-  min-width: 15rem;
-  max-width: 15rem;
+  width: 15rem;
   box-shadow: none;
-  border: none;
-  padding: 0.425rem 0.5rem 0.1rem;
-  background: #fbfbfb url("../images/sort-down.svg") no-repeat 95% 25%;
+  padding: 0.425rem 1.4rem 0.1rem 0.5rem;
+  background: #fff url("../images/sort-down.svg") no-repeat 97% 3px;
   background-size: 0.8rem;
-  min-height: 34px;
+  min-height: 35px;
+  border-radius: 3px;
+  border: 1px solid #e2e2e2;
 }
 
 .chosen-container-multi .chosen-choices li.search-choice {
@@ -156,7 +172,8 @@ select {
 .chosen-container-multi .chosen-choices li.search-field input[type=text] {
   margin: 0;
   font-family: inherit;
-  height: 18px;
+  height: 20px;
+  min-height: 0;
 }
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
@@ -188,6 +205,10 @@ select {
 
 .Zebra_DatePicker .dp_body .dp_hover {
   background: #e2e2e2;
+}
+
+.Zebra_DatePicker .dp_body .dp_current {
+  color: #3e81cc;
 }
 
 button.Zebra_DatePicker_Icon {

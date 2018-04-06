@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/main.css"/>
   </head>
 
-  <body class="sans-serif fw3 f6 lh-copy">
+  <body class="sans-serif fw4 f6 lh-copy">
 
     <header class="bsa-header pa3">
       <div class="mw8 center flex items-center justify-between">
@@ -29,14 +29,14 @@
         <a class="link pv2 ph3 ba br2 bsa-blue bg-white fw5 button-reverse" href="#settings">Manage dashboard <i class="fas fa-cog ml2 f5"></i></a>
       </div>
       <div id="settings" class="modal settings">
-        <h2 class="mt0 mb4 pb1 f3 fw2 lh-title">Settings</h2>
+        <h2 class="mt0 mb4 pb1 lh-title">Settings</h2>
         <form>
           <div class="flex justify-between items-center">
             <label for="setting-interval">Default date range</label>
             <select id="setting-interval">
-              <option>No default</option>
+              <option>None</option>
               <option>Next week</option>
-              <option selected>Next two weeks</option>
+              <option>Next two weeks</option>
               <option>Next month</option>
               <option>Next two months</option>
               <option>Next 6 months</option>
@@ -45,22 +45,22 @@
           <div class="mt3 flex justify-between items-center">
             <label for="setting-country">Default country</label>
             <select id="setting-country">
-              <option>No default</option>
+              <option>None</option>
               <option>Australia</option>
-              <option selected>Canada</option>
+              <option>Canada</option>
               <option>China</option>
               <option>United Kingdom</option>
               <option>United States</option>
             </select>
           </div>
           <div class="mt3 flex justify-between items-center">
-            <label for="setting-segment">Default segment</label>
-            <select id="setting-segment">
-              <option>No default</option>
+            <label for="setting-audience">Default audience</label>
+            <select id="setting-audience">
+              <option>None</option>
               <option>Beauty &amp; Fashion</option>
               <option>Cryptocurrency</option>
               <option>Food &amp; Drink</option>
-              <option selected>Photography</option>
+              <option>Photography</option>
               <option>Podcasts</option>
             </select>
           </div>
@@ -76,7 +76,7 @@
       <div class="mw8 center mt3">
 
         <div class="instructions">
-          <p>Select forecasting criteria below. You can choose up to 3 countries and segments per search. Default values can be managed in <a class="link underline bsa-blue" href="#settings">your dashboard settings</a>.</p>
+          <p>Select forecasting criteria below. Default values can be managed in <a class="link underline bsa-blue" href="#settings">your dashboard settings</a>.</p>
         </div>
 
         <form class="criteria mt4 pa4 br2">
@@ -85,24 +85,22 @@
               <label for="date-range-start">
                 <span class="fw5">Date-range:</span>
                 <span class="dropdown">
-                  <a onclick="dropdownMenu()" class="link underline bsa-blue" href="#nowhere">Next two weeks</a>
-                  <div class="dropdown-content" id="dropdown-content">
-                    <h3 class="mt0 mb2">Choose a preset</h3>
+                  <a id="menu-link" class="menu-link link underline bsa-blue" href="#nowhere">Choose preset</a>
+                  <span class="dropdown-content" id="menu">
                     <ul class="list">
-                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Custom</a></li>
-                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Next week</a></li>
-                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Next two weeks</a></li>
-                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Next month</a></li>
-                      <li class="mb1"><a class="db link underline bsa-blue" href="#nowhere">Next two months</a></li>
-                      <li><a class="db link underline bsa-blue" href="#nowhere">Next six months</a></li>
+                      <li><a class="db" href="#nowhere">Next week</a></li>
+                      <li><a class="db" href="#nowhere">Next two weeks</a></li>
+                      <li><a class="db" href="#nowhere">Next month</a></li>
+                      <li><a class="db" href="#nowhere">Next two months</a></li>
+                      <li><a class="db" href="#nowhere">Next six months</a></li>
                     </ul>
-                  </div>
+                  </span>
                 </span>
               </label>
               <div class="mt2">
-                <input class="datepicker-start mw5" value="04-04-2018" type="text" id="date-range-start">
+                <input class="datepicker-start mw5" type="text" id="date-range-start">
                 <span class="ph1">to</span>
-                <input class="datepicker-end mw5" value="04-18-2018" type="text" id="date-range-end">
+                <input class="datepicker-end mw5" type="text" id="date-range-end">
               </div>
             </div>
             <div class="country mr4">
@@ -110,21 +108,21 @@
               <div class="mt2">
                 <select data-placeholder="Choose a country" multiple class="chosen-select" id="country">
                   <option>Australia</option>
-                  <option selected>Canada</option>
+                  <option>Canada</option>
                   <option>China</option>
                   <option>United Kingdom</option>
                   <option>United States</option>
                 </select>
               </div>
             </div>
-            <div class="segment">
-              <label for="segment" class="fw5">Segment</label>
+            <div class="audience">
+              <label for="audience" class="fw5">Audience</label>
               <div class="mt2">
-                <select data-placeholder="Choose a segment" multiple class="chosen-select"  id="segment">
+                <select data-placeholder="Choose an audience" multiple class="chosen-select"  id="audience">
                   <option>Beauty &amp; Fashion</option>
                   <option>Cryptocurrency</option>
                   <option>Food &amp; Drink</option>
-                  <option selected>Photography</option>
+                  <option>Photography</option>
                   <option>Podcasts</option>
                 </select>
               </div>
@@ -138,8 +136,8 @@
         <div id="forecast-data" class="forecast-data results bt mb6">
           <h2 class="f2 fw9 mt4 mb4 lh-solid dib"><i class="fal fa-eye bsa-red mr3"></i>405,614 impressions</h2>
           <ul class="list f5 fa-ul">
-            <li><span class="fa-li"><i class="far fa-calendar-alt bsa-blue mr2"></i></span>April 4, 2018 – April 18, 2018</li>
-            <li><span class="fa-li"><i class="far fw fa-globe green mr2"></i></span>Canada</li>
+            <li><span class="fa-li"><i class="far fa-calendar-alt bsa-blue mr2"></i></span>April 10, 2018 – April 30, 2018</li>
+            <li><span class="fa-li"><i class="far fw fa-globe green mr2"></i></span>Australia, Canada</li>
             <li><span class="fa-li"><i class="far fw fa-users mr2"></i></span>Photography</li>
           </ul>
         </div>

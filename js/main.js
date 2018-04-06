@@ -13,29 +13,33 @@ $(function() {
 $(function() {
   $('input.datepicker-start').Zebra_DatePicker({
     direction: true,
-    format: "m-d-y",
     default_position: "below",
-    offset: [5,-5],
+    offset: [3,-50],
     pair: $('input.datepicker-end')
   });
 
   $('input.datepicker-end').Zebra_DatePicker({
       direction: 1,
-      format: "m-d-y",
-      offset: [5,-5],
+      offset: [3,-50],
       default_position: "below"
   });
 });
 
 // dropdown menu
-function dropdownMenu() {
-  var x = document.getElementById("dropdown-content");
-  if (x.className.indexOf("show") == -1) {
-    x.className += " show";
-  } else {
-    x.className = x.className.replace(" show", "");
-  }
-}
+$('a#menu-link').on('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  $('#menu').toggleClass('show');
+
+  $(document).one('click', function closeMenu (e){
+      if($('#menu').has(e.target).length === 0){
+          $('#menu').removeClass('show');
+      } else {
+          $(document).one('click', closeMenu);
+      }
+  });
+});
 
 // submit button
 function getData() {
@@ -48,7 +52,6 @@ function getData() {
 // multi-select menus
 $(function() {
   $(".chosen-select").chosen({
-    max_selected_options: 3,
     width: "100%"
   });
 });
