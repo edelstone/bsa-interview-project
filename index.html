@@ -26,7 +26,7 @@
     <section class="sub-header pa3">
       <div class="mw8 center flex items-center justify-between">
         <h1 class="fw2 f2 ma0 lh-title">Inventory Forecasting</h1>
-        <a class="link pv2 ph3 ba br2 bsa-blue bg-white fw5 button-reverse" href="#settings">Manage dashboard <i class="fas fa-cog ml2 f5"></i></a>
+        <a class="link pv2 ph3 ba br2 bsa-blue bg-white fw5 button-reverse" href="#settings"><span class="button-text mr2">Manage dashboard</span> <i class="fas fa-cog f5"></i></a>
       </div>
       <div id="settings" class="modal settings">
         <h2 class="mt0 mb4 pb1 lh-title">Settings</h2>
@@ -43,8 +43,8 @@
             </select>
           </div>
           <div class="mt3 flex justify-between items-center">
-            <label for="setting-country">Default country</label>
-            <select id="setting-country">
+            <label for="setting-location">Default location</label>
+            <select id="setting-location">
               <option>None</option>
               <option>Australia</option>
               <option>Canada</option>
@@ -79,9 +79,9 @@
           <p>Select forecasting criteria below. Default values can be managed in <a class="link underline bsa-blue" href="#settings">your dashboard settings</a>.</p>
         </div>
 
-        <form class="criteria mt4 pa4 br2">
+        <form class="criteria mt4 pa4 pt3 br2">
           <div class="flex flex-wrap">
-            <div class="date-range mr4">
+            <div class="date-range mr4 mt3">
               <label for="date-range-start">
                 <span class="fw5">Date-range:</span>
                 <span class="dropdown">
@@ -103,10 +103,10 @@
                 <input class="datepicker-end mw5" type="text" id="date-range-end">
               </div>
             </div>
-            <div class="country mr4">
-              <label for="country" class="fw5">Country</label>
+            <div class="location mr4 mt3">
+              <label for="location" class="fw5">Location</label>
               <div class="mt2">
-                <select data-placeholder="Choose a country" multiple class="chosen-select" id="country">
+                <select data-placeholder="Choose location(s)" multiple class="chosen-select" id="location">
                   <option>Australia</option>
                   <option>Canada</option>
                   <option>China</option>
@@ -115,10 +115,10 @@
                 </select>
               </div>
             </div>
-            <div class="audience">
+            <div class="audience mt3">
               <label for="audience" class="fw5">Audience</label>
               <div class="mt2">
-                <select data-placeholder="Choose an audience" multiple class="chosen-select"  id="audience">
+                <select data-placeholder="Choose audience(s)" multiple class="chosen-select"  id="audience">
                   <option>Beauty &amp; Fashion</option>
                   <option>Cryptocurrency</option>
                   <option>Food &amp; Drink</option>

@@ -15,8 +15,7 @@
 ## Notable issues
 
 - Form is not accessible.
-- Mobile layout is functional, but could use work.
-- Dashboard settings allow for only one default country or audience, while the form permits unlimited.
+- Dashboard settings permit only one default country or audience, while the form permits unlimited.
 
 ## Resources
 

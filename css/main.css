@@ -132,6 +132,7 @@ select {
 
 .blocker {
   background-color: rgba(0,0,0,0.5);
+  padding: 0;
 }
 
 /* Multi-select menus */
@@ -139,7 +140,7 @@ select {
 .chosen-container-multi .chosen-choices {
   width: 15rem;
   box-shadow: none;
-  padding: 0.425rem 1.4rem 0.1rem 0.5rem;
+  padding: 0.4rem 1.4rem 0.1rem 0.5rem;
   background: #fff url("../images/sort-down.svg") no-repeat 97% 3px;
   background-size: 0.8rem;
   min-height: 35px;
@@ -148,7 +149,7 @@ select {
 }
 
 .chosen-container-multi .chosen-choices li.search-choice {
-  margin: 0 5px 5px 0;
+  margin: 0 3px 3px 0;
   box-shadow: none;
 }
 
@@ -219,4 +220,74 @@ button.Zebra_DatePicker_Icon {
 
 button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
   margin-right: 0.4rem;
+}
+
+@media (max-width: 600px) {
+
+  html {
+    font-size: 90%;
+  }
+
+  .button-reverse {
+    padding: 0.7rem;
+    margin-left: 1rem;
+  }
+
+  .button-text {
+    display: none;
+  }
+
+  .button-reverse svg {
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+
+  .criteria {
+    padding: 0 1rem 2rem;
+  }
+
+  .criteria label {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .modal {
+    padding: 1.5rem;
+  }
+
+  .datepicker-start {
+    margin-bottom: 0.2rem;
+  }
+
+  .settings .flex {
+    align-items: left;
+    flex-direction: column;
+  }
+
+  .settings .mt3 {
+    margin-top: 1.5rem;
+  }
+
+  .settings label {
+    margin-bottom: 0.2rem;
+  }
+
+  .forecast-data {
+    margin-bottom: 2rem;
+  }
+
+  .forecast-data h2 {
+    font-size: 1.75rem;
+  }
+
+  .list.fa-ul {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+
+  h1.f2 {
+    font-size: 1.75rem;
+  }
 }
