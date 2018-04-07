@@ -187,6 +187,10 @@ select {
   right: 0;
 }
 
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  background-color: #cbcbcb !important;
+}
+
 .chosen-container-multi .chosen-choices li.search-choice {
   background: #f4f4f4;
   border-color: #e2e2e2;
@@ -229,7 +233,7 @@ button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
   }
 
   .button-reverse {
-    padding: 0.7rem;
+    padding: 0.4rem 0.5rem;
     margin-left: 1rem;
   }
 
@@ -244,6 +248,10 @@ button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
 
   .criteria {
     padding: 0 1rem 2rem;
+  }
+
+  .criteria .flex {
+    flex-direction: column;
   }
 
   .criteria label {
@@ -283,11 +291,41 @@ button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
   .list.fa-ul {
     margin-left: 2rem;
   }
-}
-
-@media (max-width: 400px) {
 
   h1.f2 {
     font-size: 1.75rem;
+  }
+
+  .location, .date-range {
+    margin-right: 0;
+  }
+
+  select {
+    min-width: 100%;
+  }
+
+  .chosen-container-multi .chosen-choices {
+    width: 100%;
+  }
+
+  .date-range .ph1 {
+    display: block;
+    padding: 0.2rem 0 0.4rem;
+  }
+
+  .date-range input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .Zebra_DatePicker_Icon_Wrapper {
+    width: 100%;
+  }
+}
+
+@media (pointer: coarse) {
+
+  input, select, .chosen-container {
+    font-size: 16px;
   }
 }
