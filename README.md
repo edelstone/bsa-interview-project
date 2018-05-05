@@ -2,6 +2,8 @@
 
 ### [Live demo](https://edelstone.github.io/bsa-interview-project/)
 
+<img src="https://i.imgur.com/IXOrts7.png">
+
 ## Notes on design intention
 
 - **My dashboards:** I envisioned a small fly-out menu that would link to a homepage listing of all employee dashboards, and a link to global preferences. No UI was designed because I considered it out of scope.
